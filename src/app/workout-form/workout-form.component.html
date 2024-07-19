@@ -1,0 +1,66 @@
+<main
+  class="flex-grow p-3 bg-gray-100 min-h-[86vh] flex justify-center items-center"
+>
+  <div
+    class="max-w-md mx-auto bg-purple-100 p-8 rounded-lg shadow-lg flex flex-col items-center"
+  >
+    <label class="text-2xl font-medium text-gray-600 text-center"
+      >Add Workout</label
+    >
+    <form
+      #workoutForm="ngForm"
+      (ngSubmit)="onSubmit(workoutForm)"
+      class="w-full mt-6"
+    >
+      <div class="mb-9 w-full">
+        <label class="block text-sm font-medium text-gray-700 text-nowrap"
+          >User Name *</label
+        >
+
+        <input
+          type="text"
+          name="username"
+          [(ngModel)]="workout.username"
+          required
+          class="mt-1 block w-[45%] px-4 py-2 bg-white-40 border-b-2 border-gray-400 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+        />
+      </div>
+      <div class="flex space-x-4 mb-9 w-full">
+        <div class="w-1/2">
+          <label class="block text-sm font-medium text-gray-700 text-nowrap"
+            >Workout Type *</label
+          >
+          <select
+            name="workoutType"
+            [(ngModel)]="workout.workoutType"
+            required
+            class="mt-1 block w-full px-4 py-2 bg-white-40 border-b-2 border-gray-400 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          >
+            <option value="Cycling">Cycling</option>
+            <option value="Running">Running</option>
+            <option value="Swimming">Swimming</option>
+            <option value="Yoga">Yoga</option>
+          </select>
+        </div>
+        <div class="w-1/2">
+          <label class="block text-sm font-medium text-gray-700 text-nowrap"
+            >Workout Minutes *</label
+          >
+          <input
+            type="number"
+            name="workoutMinutes"
+            [(ngModel)]="workout.workoutMinutes"
+            required
+            class="mt-1 block w-full px-4 py-2 bg-white-40 border-b-2 border-gray-400 rounded-md text-gray-900 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+          />
+        </div>
+      </div>
+      <button
+        type="submit"
+        class="bg-blue-100 w-full sm:w-5/12 text-blue-800 py-2 px-5 rounded-full border border-gray-400  focus:outline-none focus:ring-2 focus:ring-blue-500 transition duration-300 shadow-lg shadow-blue-500/40"
+      >
+        Add Workout
+      </button>
+    </form>
+  </div>
+</main>

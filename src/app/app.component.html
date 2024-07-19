@@ -1,0 +1,46 @@
+<!-- Header -->
+<header class="bg-blue-500 text-white p-4 shadow-md font-serif">
+  <div class="max-w-7xl mx-auto flex justify-between items-center">
+    <legend class="text-2xl font-medium text-center w-full md:w-auto">
+      Health Tracker
+    </legend>
+    <nav>
+      <ul class="hidden md:flex space-x-10 text-base">
+        <li><a href="app.component.html" class="hover:text-gray-700">Home</a></li>
+        <li><a href="workout-list/workout-list.component.html" class="hover:text-gray-700">Workout List</a></li>
+        <li><a href="#" class="hover:text-gray-700">Progress</a></li>
+      </ul>
+    </nav>
+  </div>
+  <div class="text-nowrap md:hidden mt-4 flex justify-space justify-center space-x-6 px-4">
+    <ul class="flex space-x-10">
+      <li>
+        <a routerLink="/workout-form" class="block text-base hover:text-gray-700"
+          >Home</a
+        >
+      </li>
+      <li>
+        <a
+          routerLink="/workout-list"
+          class="block text-base hover:text-gray-700"
+          onclick="return false;"
+          >Workout List</a
+        >
+      </li>
+      <li>
+        <a routerLink="" class="block text-base hover:text-gray-700">Progress</a>
+      </li>
+    </ul>
+  </div>
+</header>
+
+<!--Workout Form-->
+
+<router-outlet></router-outlet>
+
+<!-- Footer -->
+<footer class="bg-blue-500 text-white p-3 font-serif font-base tracking-widest">
+  <div class="max-w-7xl mx-auto text-center">
+    <label>&copy; All rights reserved 2024.</label>
+  </div>
+</footer>
