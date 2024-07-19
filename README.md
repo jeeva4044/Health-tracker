@@ -45,7 +45,7 @@ Follow these instructions .
 ## Development server
 
 - I have Deploy the application on a hosting platform like: vercel
-- 
+-- https://healthh-tracker.netlify.app/
 
 - You can also Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
 
