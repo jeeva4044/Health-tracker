@@ -5,12 +5,12 @@
       [(ngModel)]="searchTerm"
       (input)="applyFilters()"
       placeholder="Search by name"
-      class="mb-2 md:mb-0 px-4 py-2 bg-blue-100 border-b-2 border-gray-600 rounded-md h-12 md:w-2/5 w-full"
+      class="mb-2 md:mb-0 px-4 py-2 bg-blue-100 border-b-2 border-gray-400 rounded-md h-12 md:w-2/5 w-full"
     />
     <select
       [(ngModel)]="filterType"
       (change)="applyFilters()"
-      class="mb-2 md:mb-0 px-4 py-2 bg-blue-100 border-b-2 border-gray-600 rounded-md h-12 md:w-2/5 w-full cursor-pointer"
+      class="mb-2 md:mb-0 px-4 py-2 bg-blue-100 border-b-2 border-gray-400 rounded-md h-12 md:w-2/5 w-full cursor-pointer"
     >
       <option value="">Filter by workout type</option>
       <option value="All">All</option>
@@ -23,7 +23,7 @@
 
   <div class="overflow-x-auto">
     <table
-      class="min-w-full bg-white table-auto text-left border-collapse rounded-md shadow-md shadow-neutral-500"
+      class="min-w-full bg-blue-300 table-auto text-left border-brown-100 border-collapse rounded-md shadow-md shadow-neutral-500"
     >
       <thead>
         <tr>

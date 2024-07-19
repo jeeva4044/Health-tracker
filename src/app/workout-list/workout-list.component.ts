@@ -40,24 +40,24 @@ export class WorkoutListComponent implements OnInit {
   loadInitialUsers() {
     this.users = [
       {
-        name: 'John',
+        name: 'John Doe',
         workouts: [
-          { type: 'Cycling', minutes: 35 },
-          { type: 'Running', minutes: 40 }
+          { type: 'Running', minutes: 30 },
+          { type: 'Cycling', minutes: 45 }
         ]
       },
       {
-        name: 'Ash',
+        name: 'Jane smith',
         workouts: [
-          { type: 'Swimming', minutes: 65 },
-          { type: 'Running', minutes: 15}
+          { type: 'Swimming', minutes: 60 },
+          { type: 'Running', minutes: 20}
         ]
       },
       {
-        name: 'Tyson',
+        name: 'Mike Johnson',
         workouts: [
-          { type: 'Running', minutes: 60 },
-          { type: 'Cycling', minutes: 50 }
+          { type: 'Yoga', minutes: 50 },
+          { type: 'Cycling', minutes: 40}
         ]
       }
     ];
